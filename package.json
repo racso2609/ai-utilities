@@ -1,5 +1,16 @@
 {
+  "name": "ai-handler",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "module": "dist/index.m.js",
+  "unpkg": "dist/index.umd.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    "require": "./dist/index.js",
+    "default": "./dist/index.modern.js"
+  },
   "scripts": {
+    "build": "rm -rf dist && microbundle --tsconfig tsconfig.json --no-sourcemap",
     "test": "node --import tsx --test"
   },
   "devDependencies": {
@@ -7,6 +18,7 @@
     "@types/node": "^22.5.5",
     "eslint": "^9.11.0",
     "globals": "^15.9.0",
+    "microbundle": "^0.15.1",
     "tsx": "^4.19.1",
     "typescript": "^5.6.2",
     "typescript-eslint": "^8.6.0"
