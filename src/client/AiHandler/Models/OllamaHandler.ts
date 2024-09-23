@@ -52,7 +52,7 @@ export class AiOllamaHandler implements AiModel {
     return {
       context: response.context,
       response: response.response,
-      mode: response.model,
+      model: response.model,
     };
   }
 

@@ -1,7 +1,7 @@
 export type AskResponse = {
   response: string;
   context: number[];
-  mode: string;
+  model: string;
 };
 
 export type AskConfig = {
