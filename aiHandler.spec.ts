@@ -1,9 +1,8 @@
-import test, { describe, suite } from "node:test";
-import * as assert from "node:assert";
 import * as fs from "fs";
 import { AiHandler } from "../src/client/AiHandler";
 import { defaultOllamaHandler } from "../src/client/AiHandler/Models/OllamaHandler";
 import path from "node:path";
+import { assert, describe, suite, test } from "vitest";
 
 suite("aiHandler", () => {
   describe("Ollama", () => {
