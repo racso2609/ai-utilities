@@ -2,9 +2,7 @@
   "name": "ai-handler",
   "version": "1.0.0",
   "main": "dist/index.js",
-  "module": "dist/index.m.js",
-  "unpkg": "dist/index.umd.js",
-  "types": "dist/src/src/index.d.ts",
+  "types": "dist/index.d.ts",
   "exports": {
     "require": "./dist/index.js",
     "default": "./dist/index.modern.js"
