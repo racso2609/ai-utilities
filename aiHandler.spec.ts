@@ -1,8 +1,7 @@
 import * as fs from "fs";
-import { AiHandler } from "../src/client/AiHandler";
-import { defaultOllamaHandler } from "../src/client/AiHandler/Models/OllamaHandler";
 import path from "node:path";
 import { assert, describe, suite, test } from "vitest";
+import { AiHandler, defaultOllamaHandler } from "./src";
 
 suite("aiHandler", () => {
   describe("Ollama", () => {
@@ -11,6 +10,7 @@ suite("aiHandler", () => {
     test("context data", async () => {
       const textFilePath = path.join(
         __dirname,
+        "test",
         "utils",
         "files",
         "first-steps.md",
@@ -27,6 +27,7 @@ suite("aiHandler", () => {
     test("image viewer", async () => {
       const imagePath = path.join(
         __dirname,
+        "test",
         "utils",
         "files",
         "IMG-valentin-wallet-s1Iq2bRoR6Q-unsplash.jpg",
